@@ -41,8 +41,8 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adaa™](https://t.me/real_MoviesAdda2)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda2)</b> ↭  🔥")
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [MarselMovie](https://t.me/MarselMovie)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n ")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -63,7 +63,7 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 
 #ai
-AI = is_enabled((environ.get("AI","True")), False)
+AI = is_enabled((environ.get("AI","False")), False)
 OPENAI_API = environ.get("OPENAI_API","")
 LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 # Requested Content template variables ---
@@ -89,7 +89,7 @@ DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
+CAPTION_BUTTON_URL = "https://t.me/MarselUpdate"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
