@@ -592,22 +592,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
-        ], [
-            InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
+            ],[
+            InlineKeyboardButton('🔎 Search 🔍', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/MarselUpdate')
+            ],[
+            InlineKeyboardButton('🙆🏻 Help 🙎', callback_data='help'),
             InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
-        ]]
+            ],[
+            InlineKeyboardButton('MovieChannel', url='https://t.me/MarselUpdate')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        await query.answer('♥️ Thank You MarselDev ♥️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -688,9 +688,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/MarvelStudioi")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselUpdate")
+                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselMovie")
 
             ]]
             btn_lzdv = [
@@ -716,9 +716,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/MarvelStudioi")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselUpdate")
+                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselMovie")
+
             ]]
             btn_lzdv = [
                 [
@@ -742,9 +743,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/MarvelStudioi")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselUpdate")
+                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselMovie")
 
             ]]
             btn_lzdv = [
@@ -769,9 +770,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/MarvelStudioi")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselUpdate")
+                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselMovie")
+
             ]]
             btn_lzdv = [
                 [
@@ -795,9 +797,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"Marvel Channel", url=f"https://telegram.me/MarvelStudioi")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselUpdate")
+                InlineKeyboardButton(text=f"⚡️ Channel 🦋", url=f"https://t.me/MarselMovie")
 
             ]]
             btn_lzdv = [
