@@ -1,4 +1,4 @@
-import re
+pleaseimport re
 from os import environ
 
 id_pattern = re.compile(r'^.\d+$')
@@ -74,7 +74,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','Marsel_4')  # WITHOUT @ [  add on
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "MarselUpdate") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
+URL_MODE = is_enabled((environ.get("URL_MODE","False")), False)
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'pdiskpro.in') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '1ca1fe6ebb0523de51228b0e84195d15746ad6af')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
